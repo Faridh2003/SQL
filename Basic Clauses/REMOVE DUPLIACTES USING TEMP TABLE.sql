@@ -1,0 +1,8 @@
+SELECT DISTINCT *
+INTO temp
+FROM person;
+
+TRUNCATE TABLE person;
+
+INSERT INTO person
+SELECT * FROM temp;

@@ -46,4 +46,9 @@ FROM Sales.OrdersArchive
 
 SELECT
 *
-FROM sales.OrdersArchive
+FROM(
+	SELECT
+	ROW_NUMBER() OVER(PARTITION BY OrderId ORDER BY CreationTime DESC) AS Duplicates,
+	*
+	FROM sales.OrdersArchive
+)T WHERE Duplicates = 1 -- If rank is 1 then it is not a duplicate, if it is greater than 1 then it is a duplicate.

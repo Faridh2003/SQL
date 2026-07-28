@@ -4,8 +4,8 @@
 		  Scalar subquery : Returns a single value as an result
 
 
-	Task 1: Show the Prod Id, Product name  
-			and the total number of product and Orders */
+Task : Show the Prod Id, Product name  
+		and the total number of product and Orders */
 
 SELECT
 	ProductID,

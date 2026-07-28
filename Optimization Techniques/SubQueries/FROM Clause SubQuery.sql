@@ -1,4 +1,4 @@
--- TASK 1: Find the products that have the prie higher than the 
+-- TASK 1: Find the products that have the price higher than the 
 --		   average price of all products.
 
 
